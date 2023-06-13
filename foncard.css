@@ -1,0 +1,29 @@
+#red {
+    color: red;
+    background-color: rgb(221, 221, 221);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    text-align: center;
+    user-select: none;
+}
+
+#black {
+    color: rgb(0, 0, 0);
+    background-color: rgb(221, 221, 221);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    text-align: center;
+    user-select: none;
+}
+
+#oglav {
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    user-select: none;
+}
+
+.non:active{
+    color: brown;
+    display: none;
+}
