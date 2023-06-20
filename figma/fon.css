@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    width: 1920px;
+    height: 5155px;
+    background-color: #162831;
+}
+
+.menu {
+    position: absolute;
+    width: 1298px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+}
+
+.menu img {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 312px;
+    top: 30px;
+}
+
+.menu ul {
+    margin-left: 274px;
+    display: flex;
+    list-style: none;
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.head_logo {
+    width: 1296;
+    height: 600;
+    background-image: url(unsplash_S-llxYh3GzI.png);
+    text-align: center;
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    left: 312px;
+    top: 140px;
+}
+
+.maps {
+    width: ;
+    margin-left: ;
+    height: 600;
+    border: ;
+    border-radius: ;
+    padding: ;
+
+}
