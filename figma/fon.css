@@ -3,13 +3,13 @@
     padding: 0;
 }
 
-.body {
+body {
     width: 1920px;
     height: 5155px;
     background-color: #162831;
 }
 
-.menu {
+menu {
     position: absolute;
     width: 1298px;
     height: 60px;
@@ -20,7 +20,7 @@
 
 }
 
-.menu img {
+menu img {
     position: absolute;
     width: 60px;
     height: 60px;
@@ -28,7 +28,7 @@
     top: 30px;
 }
 
-.menu ul {
+menu ul {
     margin-left: 274px;
     display: flex;
     list-style: none;
@@ -55,6 +55,7 @@ li a {
     background-repeat: no-repeat;
     left: 312px;
     top: 140px;
+    border-radius: 10px;
 }
 
 .maps {
@@ -65,4 +66,24 @@ li a {
     border-radius: ;
     padding: ;
 
+}
+
+#logow{
+    position: absolute;
+    width: 32px;
+    height: 22px;
+    left: 326px;
+    top: 43.51px;
+}
+
+html button{
+    position: absolute;
+    margin-left: 50px;
+    top: 43px;
+    width: 155px;
+    height: 36px;
+    border-radius: 3px;
+    padding: 9px, 15px, 9px, 15px;
+    gap: 10px;
+    background-color: #018ABE;
 }
