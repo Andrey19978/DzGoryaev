@@ -1,0 +1,22 @@
+li{
+    margin-top: 10px;
+    background-color: rgb(176, 99, 117);
+    padding: 1px 1px 1px 1px;
+}
+span{
+    background-color: rgb(137, 56, 75);
+    padding: 1px 15px 0px 15px;
+}
+ol{
+    list-style-type: none;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(210, 148, 164);
+    counter-reset: number;
+    color: rgb(255, 255, 255);
+}
+li::before{
+    margin-left: 10px;
+    content: counter(number)".";
+    counter-increment: number;
+    padding: 5px 10px 1px 1px;
+}
