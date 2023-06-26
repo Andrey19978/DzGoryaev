@@ -4,31 +4,87 @@
 }
 
 body {
+    position: absolute;
     width: 1920px;
     height: 5155px;
     background-color: #162831;
 }
 
-menu {
-    position: absolute;
+header {
     width: 1298px;
     height: 60px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-
+    top: 30px;
+    left: 312px;
+    border-radius: 3px;
 }
 
-menu img {
+.menu {
+    width: 60px;
+    height: 60px;
+    top: 30px;
+    left: 312px;
+}
+
+#logov {
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 312px;
     top: 30px;
+    left: 312px;
 }
 
-menu ul {
+#logow {
+    position: absolute;
+    width: 32px;
+    height: 22px;
+    top: 43.5078125px;
+    left: 326px;
+}
+
+.nav {
+    position: absolute;
+    display: flex;
+    width: 655px;
+    height: 19px;
+    top: 51px;
+    left: 586px;
+    gap: 50px;
+}
+
+#navo {
+    width: 56px;
+    height: 19px;
+}
+
+.batt {
+    display: flex;
+    position: absolute;
+    width: 155px;
+    height: 36px;
+    top: 43px;
+    left: 1455px;
+    padding: 9px 15px 9px 15px;
+    border-radius: 3px;
+    gap: 10px;
+}
+
+header button {
+    position: absolute;
+    width: 155px;
+    height: 36px;
+    border-radius: 3px;
+    padding: 9px, 15px, 9px, 15px;
+    gap: 10px;
+    background-color: #018ABE;
+
+}
+
+
+
+
+
+
+/* menu ul {
     margin-left: 274px;
     display: flex;
     list-style: none;
@@ -44,11 +100,13 @@ li a {
     color: white;
     text-decoration: none;
     font-size: 14px;
-}
+} */
 
 .head_logo {
+    display: flex;
     width: 1296;
     height: 600;
+    margin: 30px auto 0 auto;
     background-image: url(unsplash_S-llxYh3GzI.png);
     text-align: center;
     padding-top: 200px;
@@ -56,6 +114,7 @@ li a {
     left: 312px;
     top: 140px;
     border-radius: 10px;
+
 }
 
 .maps {
@@ -65,25 +124,4 @@ li a {
     border: ;
     border-radius: ;
     padding: ;
-
-}
-
-#logow{
-    position: absolute;
-    width: 32px;
-    height: 22px;
-    left: 326px;
-    top: 43.51px;
-}
-
-html button{
-    position: absolute;
-    margin-left: 50px;
-    top: 43px;
-    width: 155px;
-    height: 36px;
-    border-radius: 3px;
-    padding: 9px, 15px, 9px, 15px;
-    gap: 10px;
-    background-color: #018ABE;
 }
