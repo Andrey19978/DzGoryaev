@@ -1,7 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+
 
 body {
     position: absolute;
@@ -57,7 +54,7 @@ header {
 }
 
 .batt {
-    display: flex;
+
     position: absolute;
     width: 155px;
     height: 36px;
@@ -94,34 +91,30 @@ li {
     float: left;
 
 }
-
-li a {
-    margin-left: 50px;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-} */
+ */
 
 .head_logo {
-    display: flex;
-    width: 1296;
-    height: 600;
+    position: absolute;
+    left: 312px;
+    /* display: flex; */
+    width: 1296px;
+    height: 600px;
     margin: 30px auto 0 auto;
     background-image: url(unsplash_S-llxYh3GzI.png);
-    text-align: center;
-    padding-top: 200px;
+
     background-repeat: no-repeat;
-    left: 312px;
-    top: 140px;
-    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 
 .maps {
-    width: ;
-    margin-left: ;
-    height: 600;
-    border: ;
-    border-radius: ;
-    padding: ;
+    height: 600px;
+}
+ a {
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
 }
