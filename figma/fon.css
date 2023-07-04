@@ -1,5 +1,3 @@
-
-
 body {
     position: absolute;
     width: 1920px;
@@ -13,6 +11,7 @@ header {
     top: 30px;
     left: 312px;
     border-radius: 3px;
+    margin-bottom: 50px;
 }
 
 .menu {
@@ -46,6 +45,7 @@ header {
     top: 51px;
     left: 586px;
     gap: 50px;
+
 }
 
 #navo {
@@ -60,9 +60,7 @@ header {
     height: 36px;
     top: 43px;
     left: 1455px;
-    padding: 9px 15px 9px 15px;
     border-radius: 3px;
-    gap: 10px;
 }
 
 header button {
@@ -76,45 +74,298 @@ header button {
 
 }
 
-
-
-
-
-
-/* menu ul {
-    margin-left: 274px;
-    display: flex;
-    list-style: none;
-}
-
-li {
-    float: left;
-
-}
- */
-
 .head_logo {
-    position: absolute;
+    display: flex;
     left: 312px;
-    /* display: flex; */
     width: 1296px;
     height: 600px;
     margin: 30px auto 0 auto;
     background-image: url(unsplash_S-llxYh3GzI.png);
-
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 70px;
+}
 
+.head_text {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.text {
+    font-size: 64px;
 }
 
 .maps {
     height: 600px;
 }
- a {
-    margin-left: 50px;
+
+a {
     color: white;
     text-decoration: none;
     font-size: 14px;
+}
+
+.services {
+    display: flex;
+    height: 699px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+#servicestext {
+    position: absolute;
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    width: 336px;
+    height: 59px;
+    top: 890px;
+    left: 792px;
+}
+
+.servicesone {
+    position: absolute;
+    margin: 30px auto 0 auto;
+    background-image: url(unsplash_TnOyyEtrKd0.png);
+    background-repeat: no-repeat;
+    width: 416px;
+    height: 540px;
+    top: 1049px;
+    left: 312px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.servicestwo {
+    position: absolute;
+    margin: 30px auto 0 auto;
+    background-image: url(unsplash.png);
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    width: 416px;
+    height: 258px;
+    top: 1331px;
+    left: 752px;
+    border-radius: 10px;
+}
+
+.servicesthree {
+    position: absolute;
+    margin: 30px auto 0 auto;
+    background-image: url(unsp.png);
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    width: 416px;
+    height: 258px;
+    top: 1331px;
+    left: 1192px;
+    border-radius: 10px;
+}
+
+.servicesfour {
+    position: absolute;
+    margin: 30px auto 0 auto;
+    background-image: url(unspla.png);
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    width: 416px;
+    height: 258px;
+    top: 1049px;
+    left: 752px;
+    border-radius: 10px;
+}
+
+.servicesfive {
+    position: absolute;
+    margin: 30px auto 0 auto;
+    background-image: url(uns.png);
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    width: 416px;
+    height: 258px;
+    top: 1049px;
+    left: 1192px;
+    border-radius: 10px;
+}
+
+.textone {
+    color: white;
+    font-size: 24px;
+    margin-left: 50px;
+    margin-top: 456px;
+}
+
+.texttwo {
+    color: white;
+    font-size: 24px;
+    margin-left: 40px;
+    margin-top: 194px;
+}
+
+.textthree {
+    color: white;
+    font-size: 24px;
+    margin-left: 40px;
+    margin-top: 160px;
+}
+
+.textfour {
+    color: white;
+    font-size: 24px;
+    margin-left: 40px;
+    margin-top: 194px;
+}
+
+.textfive {
+    color: white;
+    font-size: 24px;
+    margin-left: 40px;
+    margin-top: 160px;
+}
+
+#heading {
+    position: absolute;
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    width: 154px;
+    height: 59px;
+    top: 1739px;
+    left: 883px;
+}
+
+.review {
+    position: absolute;
+    width: 636px;
+    height: 350px;
+    top: 1898px;
+    left: 642px;
+    border-radius: 10px;
+    background: #018ABE;
+}
+
+.revie {
+    margin-top: 50px;
+    margin-left: 60px;
+    width: 516px;
+    height: 28px;
+    top: 1948px;
+    left: 702px;
+    font-family: Proxima Nova;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.revi {
+    margin-top: 48px;
+    margin-left: 60px;
+    width: 516px;
+    height: 196px;
+    top: 1996px;
+    left: 702px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.reviewtwo {
+    position: absolute;
+    background: #018ABE;
+    width: 500px;
+    height: 276px;
+    top: 1935px;
+    left: 92px;
+    border-radius: 10px;
+    opacity: 40%;
+}
+
+.revietwo {
+    margin-top: 40px;
+    margin-left: 45px;
+    width: 410px;
+    height: 22px;
+    top: 1975px;
+    left: 137px;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+
+
+}
+
+.revitwo {
+    margin-top: 37px;
+    margin-left: 45px;
+    width: 410px;
+    height: 128px;
+    top: 2012px;
+    left: 137px;
+    font-family: Proxima Nova;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.reviewthree {
+    position: absolute;
+    background: #018ABE;
+    width: 500px;
+    height: 276px;
+    top: 1935px;
+    left: 1328px;
+    border-radius: 10px;
+    opacity: 40%;
+}
+
+.reviethree {
+    margin-top: 40px;
+    margin-left: 45px;
+    width: 410px;
+    height: 22px;
+    top: 1975px;
+    left: 1373px;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.revithree {
+    margin-top: 37px;
+    margin-left: 45px;
+    width: 410px;
+    height: 142px;
+    top: 2012px;
+    left: 1373px;
+    font-family: Proxima Nova;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
 }
