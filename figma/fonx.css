@@ -69,4 +69,8 @@ header button{
     left: 300px;
 }
 
-
+.my-element:active {
+    background-color: blue;
+    width: 200px;
+    transition: backgraund-color 0.5s ease-out, width is ease-in-out;
+}
