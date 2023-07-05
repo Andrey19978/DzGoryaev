@@ -97,9 +97,6 @@ header button {
     font-size: 64px;
 }
 
-.maps {
-    height: 600px;
-}
 
 a {
     color: white;
@@ -368,4 +365,150 @@ a {
     letter-spacing: 0em;
     text-align: left;
     color: #FFFFFF;
+}
+
+.control {
+    margin-top: 20px;
+    width: 124px;
+    height: 16px;
+    top: 2308px;
+    left: 898px;
+    border-radius: 3px;
+    position: absolute;
+    background-image: url(controls.png);
+}
+
+#headingtwo {
+    position: absolute;
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    width: 389px;
+    height: 59px;
+    top: 2474px;
+    left: 766px;
+    border-radius: 0px 50px 0px 50px;
+}
+
+.group5 {
+    position: absolute;
+    width: 466px;
+    top: 2699px;
+    left: 422px;
+}
+
+.grou5 {
+    width: 406.2815246582031px;
+    height: 34px;
+    top: 2699px;
+    left: 422px;
+    font-family: Proxima Nova;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.gro5 {
+    width: 466px;
+    height: 170px;
+    top: 2763px;
+    left: 422px;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.group4 {
+    position: absolute;
+    width: 466px;
+    height: 366px;
+    top: 3115px;
+    left: 1032px;
+
+}
+
+.grou4 {
+    width: 415px;
+    height: 34px;
+    top: 3115px;
+    left: 1032px;
+    font-family: Proxima Nova;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.gro4 {
+    width: 466px;
+    height: 302px;
+    top: 3179px;
+    left: 1032px;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.rectan {
+    width: 526px;
+    height: 365px;
+    top: 2633px;
+    left: 972px;
+    border-radius: 10px;
+    position: absolute;
+    background-image: url(Rectangle\ 23.png);
+}
+
+.rectanone {
+    width: 526px;
+    height: 400px;
+    top: 3098px;
+    left: 422px;
+    border-radius: 10px;
+    position: absolute;
+    background-image: url(Rectangle\ 24.png);
+}
+
+.price {
+    width: 1076px;
+    height: 614px;
+    top: 3648px;
+    left: 422px;
+    position: absolute;
+    background-image: url(price.png);
+}
+
+.contacts {
+    width: 1296px;
+    height: 604px;
+    top: 4412px;
+    left: 312px;
+    position: absolute;
+    background-image: url(contact.png);
+}
+
+.maps {
+    width: 1296px;
+    height: 19px;
+    top: 5106px;
+    left: 312px;
+    position: absolute;
+    background-image: url(main-footer.png);
 }
