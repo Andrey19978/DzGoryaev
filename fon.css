@@ -12,11 +12,8 @@ body {
 }
 
 header {
-    justify-content: center;
-    align-items: center;
+    background-size: auto 100%;
     background-repeat: no-repeat;
-    margin: 0 auto 0 auto;
-    display: flex;
     width: 1440px;
     height: 645px;
     background-image: url(710522c37840cfe272437ad775fa7572.png);
@@ -306,8 +303,6 @@ select {
 .formpoi {
     display: flex;
     flex-direction: row;
-    margin-top: 64px;
-
 }
 
 .whowe {
@@ -316,11 +311,12 @@ select {
     top: 645px;
     padding: 72px;
 }
-.photowrite{
+
+.photowrite {
     position: absolute;
     width: 638px;
-height: 384px;
-left: 730px;
-border-radius: 20px;
-background-image: url(Frame\ 432.png);
+    height: 384px;
+    left: 730px;
+    border-radius: 20px;
+    background-image: url(Frame\ 432.png);
 }
