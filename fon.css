@@ -13,7 +13,7 @@ body {
 
 header {
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     background-repeat: no-repeat;
     margin: 0 auto 0 auto;
     display: flex;
@@ -150,54 +150,55 @@ header {
 .frame142 {
     position: absolute;
     width: 32px;
-height: 20px;
-top: 32px;
-left: 806px;
-font-family: Plus Jakarta Sans;
-font-size: 14px;
-font-weight: 600;
-line-height: 20px;
-letter-spacing: 0em;
-text-align: left;
-color: #FFFFFF;
+    height: 20px;
+    top: 32px;
+    left: 806px;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
 
 }
 
 .frame143 {
     position: absolute;
     width: 76px;
-height: 20px;
-top: 32px;
-left: 870px;
-font-family: Plus Jakarta Sans;
-font-size: 14px;
-font-weight: 600;
-line-height: 20px;
-letter-spacing: 0em;
-text-align: left;
-color: #FFFFFF;
+    height: 20px;
+    top: 32px;
+    left: 870px;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
 
 }
 
 .frame144 {
     position: absolute;
     width: 90px;
-height: 20px;
-top: 32px;
-left: 684px;
-gap: 4px;
+    height: 20px;
+    top: 32px;
+    left: 684px;
+    gap: 4px;
 }
-.frame1441{
-    
+
+.frame1441 {
+
     width: 72px;
-height: 20px;
-font-family: Plus Jakarta Sans;
-font-size: 14px;
-font-weight: 600;
-line-height: 20px;
-letter-spacing: 0em;
-text-align: left;
-color: #FFFFFF;
+    height: 20px;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
 
 }
 
@@ -217,44 +218,47 @@ color: #FFFFFF;
 
 }
 
-.frame21{
+.frame21 {
     position: absolute;
     width: 875px;
-height: 81px;
-top: 210px;
-left: 283px;
-font-family: Plus Jakarta Sans;
-font-size: 64px;
-font-weight: 700;
-line-height: 81px;
-letter-spacing: 0em;
-text-align: left;
-color: #FFFFFF;
+    height: 81px;
+    top: 210px;
+    left: 283px;
+    font-family: Plus Jakarta Sans;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 81px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
 }
-.frame22{
+
+.frame22 {
     position: absolute;
     width: 590px;
-height: 20px;
-top: 315px;
-left: 425px;
-font-family: Plus Jakarta Sans;
-font-size: 16px;
-font-weight: 500;
-line-height: 20px;
-letter-spacing: 0em;
-text-align: left;
-color: #FFFFFF;
+    height: 20px;
+    top: 315px;
+    left: 425px;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
 
 }
-.frame4{
+
+.frame4 {
     position: absolute;
     width: 875px;
-height: 62px;
-top: 399px;
-left: 282px;
-border-radius: 50px;
+    height: 62px;
+    top: 399px;
+    left: 282px;
+    border-radius: 50px;
 
 }
+
 #search {
     display: flex;
     align-items: center;
@@ -280,6 +284,7 @@ input[type=submit]:hover {
     filter: brightness(1.5);
     transition: filter 0.5s ease-out, width 1s ease-in-out;
 }
+
 select {
     color: #000;
     font-size: 16px;
@@ -297,9 +302,25 @@ select {
     background-position: right 0.5rem center;
     background-size: 1em;
 }
-form {
+
+.formpoi {
     display: flex;
     flex-direction: row;
     margin-top: 64px;
 
+}
+
+.whowe {
+    width: 1440px;
+    height: 528px;
+    top: 645px;
+    padding: 72px;
+}
+.photowrite{
+    position: absolute;
+    width: 638px;
+height: 384px;
+left: 730px;
+border-radius: 20px;
+background-image: url(Frame\ 432.png);
 }
