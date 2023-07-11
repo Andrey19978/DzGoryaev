@@ -135,14 +135,19 @@ H1 {
 }
 
 .left {
-    justify-content: flex-end;
+    width: 300px;
+    height: 300px;
+    background-color: #960a0a;
+    transition: all 1s;
     transform-origin: left;
-    background: url(left.png);
 }
 
 .right {
+    width: 300px;
+    height: 300px;
+    background-color: #960a0a;
+    transition: all 1s;
     transform-origin: right;
-    background: url(right.png);
 }
 
 .all:hover>.right {

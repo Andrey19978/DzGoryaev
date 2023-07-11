@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 10em;
+    border: 10px solid #3618a0;
+    border-radius: 5%;
+    animation: bet 6s infinite ;
+    transform-origin: 0 34px;
+}
+
+
+@keyframes bet {
+    100% {
+        transform: rotate(360deg);
+    }
+}
