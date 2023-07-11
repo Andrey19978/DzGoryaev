@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 25px;
+    background-color: #24C0BA;
+    color: #fff;
+}
+
+.nav h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    padding-left: 5px;
+}
+
+.nav a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    border-left: 1px solid #fff;
+}
+
+.link:hover {
+    background-color: #27d0ca;
+}
+
+.link:active {
+    background-color: #1ea6a1;
+}
+
+/* Задание 1 */
+
+.hasy {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 5em;
+    border: 4px solid #48d1cc;
+    border-radius: 50%;
+}
+
+.minutes {
+    position: absolute;
+    width: 3px;
+    height: 35px;
+    left: 51px;
+    top: 16px;
+    background: #24C0BA;
+    animation: now 1600s infinite steps(1600);
+    transform-origin: 0 34px;
+}
+
+.sekundes {
+    position: absolute;
+    width: 3px;
+    height: 45px;
+    left: 50px;
+    top: 7px;
+    background: #48d1cc;
+    animation: nev 60s infinite steps(60);
+    transform-origin: 0 45px;
+}
+
+@keyframes nev {
+    100% {
+        transform: rotate(360deg);
+        /* Стрелка делает полный круг */
+    }
+}
+
+@keyframes nov {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes now {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.centr {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 45px;
+    left: 45px;
+    background: #009B95;
+}
+
+/* Задание 2 */
+
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+H1 {
+    position: absolute;
+    margin: auto;
+    top: 100px;
+    text-align: center;
+    z-index: -1;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.b {
+    display: flex;
+    align-items: center;
+    background-color: #872d62;
+    width: 316px;
+    height: 370px;
+    transition: all 2s;
+}
+
+.left {
+    justify-content: flex-end;
+    transform-origin: left;
+    background: url(left.png);
+}
+
+.right {
+    transform-origin: right;
+    background: url(right.png);
+}
+
+.all:hover>.right {
+    transform: translateX(120px);
+}
+
+.all:hover>.left {
+    transform: translateX(-120px);
+}
+
+/* Смурфик */
+
+.animal {
+
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animal-img {
+    height: 123px;
+    width: 70px;
+    background: url(smur-sprite.png) 0px 0px;
+    animation: play 0.8s steps(16) infinite,
+        step 2s linear infinite;
+    position: absolute;
+    left: 500px;
+    right: 200px;
+}
+
+@keyframes play {
+    100% {
+        background-position: -1136px;
+    }
+}
+
+@keyframes step {
+    100% {
+        left: 800px;
+    }
+}
+
+
+
+/* Задание 3 */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-content: center;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div4 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div5 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.div6 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    width: 250px;
+    height: 150px;
+}
+
+.a:hover {
+    filter: brightness(0.5);
+    transition: filter 0.3s ease-out;
+}
+
+.img {
+    background: url(screen.webp);
+    background-size: 100% auto;
+
+}
+
+.img:hover {
+    transform: scale(105%);
+    transition: transform 1s ease-in-out;
+}
