@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Блок навигационного меню */
+header {
+    width: 100vw;
+    height: 55px;
+    background-color: #FFFAEF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav1 {
+    margin-left: 26px;
+    display: flex;
+    gap: 42px;
+}
+
+.nav2 {
+
+    justify-content: center;
+
+}
+
+.nav3 {
+    margin-right: 26px;
+    display: flex;
+    gap: 42px;
+}
+
+.lon {
+    color: #006450;
+    font-family: Roboto;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.lon1 {
+    text-decoration: none;
+    color: #00C08B;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 0.4px;
+}
+
+.lon2 {
+    text-decoration: none;
+    color: #00C08B;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+}
+
+/* Блок контента */
+main {
+    display: flex;
+    width: 1440px;
+    height: 8827px;
+
+
+}
+
+.slip {
+    justify-content: space-between;
+    display: flex;
+    width: 100vw;
+    height: 882px;
+    background-image: url(Rectangle.png);
+    
+}
+
+.main_text {
+    margin-left: 25px;
+    margin-top: 168px;
+    color: #FFFAEF;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.4px;
+}
+.slip_butt{
+    margin-top: 180px;
+    margin-right: 25px;
+    width: 201px;
+height: 64px;
+flex-shrink: 0;
+background-color: #E1FF32;
+border: 0;
+}
