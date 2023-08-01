@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1512px;
+    height: 2680px;
+    margin: auto;
+}
+
+/* Шапка */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+/* Навигацеонное меню сверху */
+.navtop {
+    display: flex;
+    padding: 20px 40px;
+    align-items: center;
+    gap: 274px;
+    align-self: stretch;
+}
+
+/* Логотип */
+.logo {
+    display: flex;
+    width: 421.9px;
+    height: 44px;
+    background-image: url(Frame\ 245233512.png);
+}
+
+/* Навигационное меню слева */
+.navleft {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.lef1 {
+    display: flex;
+    width: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    color: #A4A4A4;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.lef2 {
+    display: flex;
+    width: 74px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    color: #000;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.lef3 {
+    display: flex;
+    width: 71px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    color: #A4A4A4;
+    text-align: center;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+/* Навигационное меню справа */
+.navright {
+    display: flex;
+    width: 305.5px;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
+
+.rig1 {
+    width: 24px;
+    height: 24px;
+    background-image: url(Frame\ 33924.png);
+}
+
+.rig2 {
+    width: 24px;
+    height: 24px;
+    background-image: url(Frame\ 33918.png);
+}
+
+.rig3 {
+    margin-left: -20px;
+    width: 39px;
+    height: 24px;
+    background-image: url(Frame\ 33883.png);
+}
+
+.rig4 {
+    width: 24px;
+    height: 24px;
+    background-image: url(Frame\ 33919.png);
+}
+
+.rig5 {
+    width: 24px;
+    height: 24px;
+    background-image: url(Frame\ 33920.png);
+}
+
+/* Навигационное меню снизу */
+.navbot {
+    display: flex;
+    width: 1512px;
+    height: 42px;
+    padding: 0px 40px;
+    gap: 68.4px;
+    align-items: center;
+    border-top: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+    background: #FFF;
+}
+
+.bot1 {
+    color: #000;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.bot2 {
+    color: #FF1F00;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+/* Основная часть */
+.maitop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.maileft {
+    display: flex;
+    width: 1512px;
+    padding: 24px 40px;
+    align-items: center;
+    gap: 8px;
+}
+
+.maileft1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #A4A4A4;
+    text-decoration: none;
+}
+.maicente{
+    display: flex;
+width: 1512px;
+padding: 0px 40px;
+flex-direction: column;
+align-items: center;
+gap: 16px;
+}
+.maicente1{
+    color: #000;
+text-align: center;
+font-family: Jost;
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 5px;
+text-transform: uppercase;
+text-decoration: none;
+}
+.frame{
+    display: flex;
+width: 1512px;
+padding: 16px 40px;
+justify-content: space-between;
+align-items: flex-start;
+}
+.frameleft{
+    display: flex;
+align-items: flex-start;
+gap: 16px;
+}
+.frameleft1{
+    display: flex;
+padding: 16px 8px 16px 0px;
+align-items: center;
+gap: 8px;
+color: #000000;
+text-decoration: none;
+}
+.frameright{
+    display: flex;
+padding: 16px 73px;
+align-items: center;
+gap: 8px;
+}
+.frameright1{
+    color: #000;
+font-family: Manrope;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+text-decoration: none;
+}
