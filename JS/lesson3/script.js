@@ -46,19 +46,64 @@ if (oven0r00dd) {
 //четвертое задание
 let telA = Number(prompt('число a'));
 let telB = Number(prompt('число b'));
-let compREsult = (telA > telB) ? 'Число a больше b' : (telA < telB) ? 'Число b больше а' :  'Число a равно b' ;
-    alert(compREsult);
-    //пятое задание
+let compREsult = (telA > telB) ? 'Число a больше b' : (telA < telB) ? 'Число b больше а' : 'Число a равно b';
+alert(compREsult);
+//пятое задание
 let isStudent = prompt("Ты студент")
 let hasJob = prompt("Ты работаешь")
 let bothConditions = (isStudent && hasJob)
 console.log(bothConditions);
+//шестое задание
+let tad = Number(prompt('Введите вашь балл по экзамену'));
+let compREsul = (tad >= 60) ? 'Вы сдали' : 'Вы не сдали';
+alert(compREsul);
+//седьмое задание
+let telC = Number(prompt('число a'));
+let compREsu = (telC < 18) ? 'Вы несовершеннолетний' : (telC <= 65) ? 'Вы взрослый' : 'Вы пожилой человек';
+alert(compREsu);
+//восьмое задание
+let num4 = Number(prompt('Первое число'));
+let num5 = Number(prompt('Второе число'));
+let oven0r00d = (num4 % num5 == 0);
+if (oven0r00d) {
+    alert("Четное");
+} else {
+    alert("не четное");
+}
+//девятое задание
+let telS = prompt('Выберите напиток');
+let compREsultD = (telS == "чай") ? 'Вы выбрали чай' : (telS == "кофе") ? 'Вы выбрали кофе' : (telS == "сок") ? 'Вы выбрали сок' : "нет такого";
+alert(compREsultD);
+//десятое задание
+let telM = Number(prompt('Введите расстояние'));
+let compREsu1 = (telM < 5) ? 'Вы можете пройти пешком' : (telM <= 20) ? 'Вы можете взять велосипед' : 'Воспользуйтесь автобусом';
+alert(compREsu1);
+//одинадцатое задание
+let telP = Number(prompt('число a'));
+let telK = Number(prompt('число a'));
+let compREsu2 = (telP < telK) ? 'Число ' + (`${telK}`) + ' больше числа ' + (`${telP}`) : (telP > telk) ? ' Число ' + (`${telP}`) + ' больше числа ' + (`${telK}`) : 'Не могу посчитать(';
+alert(compREsu2);
+//двенадцатое задание
+let telY = Number(prompt('Введите число баллов по тесту'));
+let compREsua = (telY >= 90) ? 'отлично' : (telY >= 70) ? 'хорошо' : 'удовлетворительно';
+alert(compREsua);
+//тренадцатое задание
+let num4 = Number(prompt('Первое число'));
+let num5 = Number(prompt('Второе число'));
+let oven0r00d = (num4 % num5 == 0);
+if (oven0r00d) {
+    alert("Четное");
+} else {
+    alert("не четное");
+}
+//четырнадцатое задание
+let telZ = prompt('Выберите язык');
+let compREsultR = (telZ == "Французский") ? 'Bonjour' : (telZ == "английский") ? 'Hello' : "нет такого";
+alert(compREsultR);
 //пятнадцатое задание
 let telna = prompt('Введите месяц');
-let month = (telna == "декабрь" || telna == "январь" || telna == "февраль") ? "Зима": (telna == "март" || telna == "апрель" || telna == "май") ? "весна": (telna == "июнь" || telna == "июль" || telna == "август") ? "лето": (telna == "декабрь" || telna == "январь" || telna == "февраль") ? "осень": "нет такого";
+let month = (telna == "декабрь" || telna == "январь" || telna == "февраль") ? "Зима" : (telna == "март" || telna == "апрель" || telna == "май") ? "весна" : (telna == "июнь" || telna == "июль" || telna == "август") ? "лето" : (telna == "декабрь" || telna == "январь" || telna == "февраль") ? "осень" : "нет такого";
 alert(month);
-
-
 //nokod nije
 document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(144) > div > div > div > div").click();
 document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(129) > div > div > div > div").click();
