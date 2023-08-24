@@ -79,8 +79,8 @@ let telM = Number(prompt('Введите расстояние'));
 let compREsu1 = (telM < 5) ? 'Вы можете пройти пешком' : (telM <= 20) ? 'Вы можете взять велосипед' : 'Воспользуйтесь автобусом';
 alert(compREsu1);
 //одинадцатое задание
-let telP = Number(prompt('число a'));
-let telK = Number(prompt('число a'));
+let telP = Number(prompt('введите число'));
+let telK = Number(prompt('введите число'));
 let compREsu2 = (telP < telK) ? 'Число ' + (`${telK}`) + ' больше числа ' + (`${telP}`) : (telP > telk) ? ' Число ' + (`${telP}`) + ' больше числа ' + (`${telK}`) : 'Не могу посчитать(';
 alert(compREsu2);
 //двенадцатое задание
