@@ -38,7 +38,7 @@ let hasJob = prompt("Ты работаешь")
 let bothConditions = (isStudent && hasJob)
 console.log(bothConditions);
 //6 задание
-let tad = Number(prompt('Введите вашь балл по экзамену'));
+let tad = Number(prompt('Введите ваш балл по экзамену'));
 let compREsul = (tad >= 60) ? 'Вы сдали' : 'Вы не сдали';
 alert(compREsul);
 //7 задание
