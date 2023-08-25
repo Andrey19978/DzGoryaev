@@ -42,7 +42,7 @@ let tad = Number(prompt('Введите ваш балл по экзамену'))
 let compREsul = (tad >= 60) ? 'Вы сдали' : 'Вы не сдали';
 alert(compREsul);
 //7 задание
-let telC = Number(prompt('число a'));
+let telC = Number(prompt('Вашь возраст?'));
 let compREsu = (telC < 18) ? 'Вы несовершеннолетний' : (telC <= 65) ? 'Вы взрослый' : 'Вы пожилой человек';
 alert(compREsu);
 //8 задание
