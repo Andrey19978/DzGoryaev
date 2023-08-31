@@ -17,4 +17,4 @@ function checkNumb(a,b){
         return a;
     };
 }
-console.log(checkNumb(telA, telB))
+console.log(checkNumb(telA, telB));
