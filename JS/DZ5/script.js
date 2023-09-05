@@ -1,72 +1,39 @@
-let pick = document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(112) > div > div > div > div").click();
-console.log(pick);
-console.log(pick);
-console.log(pick);
-function func(){
-	console.log(document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(112) > div > div > div > div").click());
-	pick++;
-	if (pick){
-		func(); // здесь функция вызывает сама себя
-	}
-}
-func();
-let pick = (document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(123) > div > div > div > div").click());
-console.log(pick);
-console.log(pick);
-function showMessage() {
-    console.log(document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(112) > div > div > div > div").click());
+// задание 1
+let input, random = Math.ceil(Math.random() * 100);
+while (input = prompt("Введите число от 1 до 100:")) {
+  if (isNaN(input))
+    alert("Введите число!");
+  else if (input > random)
+    alert("Меньше!");
+  else if (input < random)
+    alert("Больше!");
+  else if (input == random) {
+    alert("Правильно!");
+    break;
   }
-  
-  showMessage();
-  showMessage();
-  
-
-  let pick = document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(123) > div > div > div > div.absolute.w-full.h-full.cursor-pointer.hover\\:img-highlight").click();
-  let fruits = [pick, "Апельсин", "Слива"];
-  console.log(pick);
-  console.log(pick);
-
-
-  ///сбор дерева
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(112) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(112) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(112) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(115) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(115) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(115) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(114) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(114) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(114) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(113) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(113) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(113) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(116) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(116) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(116) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(120) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(120) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(120) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(119) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(119) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(119) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(122) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(122) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(122) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(121) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(121) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(121) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(140) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(140) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(140) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(139) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(139) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(139) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(141) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(141) > div > div").click();
-  document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(141) > div > div").click();
-  ////
+}
+ // задание 2
+ for (let i = 1; i <= 10; i++) {
+  for (let p = 1; p <= 10; p++) {
+      let nen = i + ' x ' + p + ' = ' + i * p;
+      console.log(nen);
+  }
+}
+ // задание 3
+ let total = 0;
+let input;
  
-let mell = document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(132) > div > div > div > div.absolute.w-full.h-full.cursor-pointer.hover\\:img-highlight");
-let pick = mell.click();
-let pick = mell.click();
-pick++;
+do {
+  input = +prompt('Введи число');
+ 
+  if (isFinite(input)) {
+    total += input;
+    console.log(total);
+  } else {
+    alert('Было введено не число, попробуйте еще раз');
+  }
+} while (input !== 0);
+alert(`Общая сумма чисел равна ${total}`);
+ // задание 4
+
+ // задание 5
