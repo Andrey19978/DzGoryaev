@@ -101,7 +101,7 @@ console.log("age" in user);
 //7. Создайте объект "person" с несколькими свойствами: "name", "age", "city".
 let person = {
     name: "John",
-    age: "25",
+    age: 25,
     city: "California",
     address: {  //14. Создайте вложенный объект "address" в объекте "person" с полями "street" и "zipcode".
         street: "Russia",
