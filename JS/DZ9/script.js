@@ -34,3 +34,5 @@ const menu = {
       }
     }
   }
+  multiplyNumeric(menu)
+  console.log(menu)

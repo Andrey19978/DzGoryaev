@@ -1,89 +1,121 @@
-let cvs = document.getElementById("canvas");
-let ctx = cvs.getContext("2d");
+var blockSize = 25;
 
-let bird = new Image();
-let bg = new Image();
-let fg = new Image();
-let pipeUp = new Image();
-let pipeBottom = new Image();
+var rows = 20;
 
-bird.src="bird.png";
-bg.src = "bg.png";
-fg.src = "fg.png";
-pipeUp.src = "pipeUp.png";
-pipeBottom.src = "pipeBottom.png";
+var cols = 20;
 
-// Звуковые файлы
-let fly = new Audio();
-let score_audio = new Audio();
+var board;
 
-fly.src = "audio/fly.mp3";
-score_audio.src = "audio/score.mp3";
+var context; 
 
-let gap = 90;
+var snakeX = blockSize * 5;
 
-// При нажатии на какую-либо кнопку
-document.addEventListener("keydown", moveUp);
+var snakeY = blockSize * 5;
 
-function moveUp() {
- yPos -= 25;
- fly.play();
+var velocityX = 0;
+
+var velocityY = 0;
+
+var snakeBody = [];
+
+var foodX;
+
+var foodY;
+
+var gameOver = false;
+
+window.onload = function() {
+
+    board = document.getElementById("board");
+    
+    board.height = rows * blockSize;
+    
+    board.width = cols * blockSize;
+    
+    context = board.getContext("2d"); 
+    
+    placeFood();
+    
+    document.addEventListener("keyup", changeDirection);
+    
+    // update();
+    
+    setInterval(update, 1000/10); //100 milliseconds
+    
+    }
+    function placeFood() {
+
+        //(0-1) * cols -> (0-19.9999) -> (0-19) * 25
+        
+        foodX = Math.floor(Math.random() * cols) * blockSize;
+        
+        foodY = Math.floor(Math.random() * rows) * blockSize;
+        
+        }
+        function changeDirection(e) { if (e.code == "ArrowUp" && velocityY != 1) { velocityX = 0; velocityY = -1; } else if (e.code == "ArrowDown" && velocityY != -1) { velocityX = 0; velocityY = 1; } else if (e.code == "ArrowLeft" && velocityX != 1) { velocityX = -1; velocityY = 0; } else if (e.code == "ArrowRight" && velocityX != -1) { velocityX = 1; velocityY = 0; } }
+        setInterval(update, 1000/10);
+        context.fillStyle="black";
+
+context.fillRect(0, 0, board.width, board.height);
+
+context.fillStyle="red";
+
+context.fillRect(foodX, foodY, blockSize, blockSize);
+
+//Теперь проверяем, находится ли голова змейки и еда на одной точке, если находится – еду нужно «съесть» и сгенерировать новую:
+
+if (snakeX == foodX && snakeY == foodY) {
+
+snakeBody.push([foodX, foodY]);
+
+placeFood();
+
 }
+for (let i = snakeBody.length-1; i > 0; i--) {
 
-// Создание блоков
-let pipe = [];
+    snakeBody[i] = snakeBody[i-1];
+    
+    }
+    
+    if (snakeBody.length) {
+    
+    snakeBody[0] = [snakeX, snakeY];
+    
+    }
+    context.fillStyle="lime";
 
-pipe[0] = {
- x : cvs.width,
- y : 0
+snakeX += velocityX * blockSize;
+
+snakeY += velocityY * blockSize;
+
+context.fillRect(snakeX, snakeY, blockSize, blockSize);
+
+for (let i = 0; i < snakeBody.length; i++) {
+
+context.fillRect(snakeBody[i][0], snakeBody[i][1], blockSize, blockSize);
+
 }
+if (snakeX < 0 || snakeX > cols*blockSize -1 || snakeY < 0 || snakeY > rows*blockSize - 1) {
 
-let score = 0;
-// Позиция птички
-let xPos = 10;
-let yPos = 150;
-let grav = 1.5;
+    gameOver = true;
+    
+    alert("Game Over");
+    
+    }
+    
+    for (let i = 0; i < snakeBody.length; i++) {
+    
+    if (snakeX == snakeBody[i][0] && snakeY == snakeBody[i][1]) {
+    
+    gameOver = true;
+    
+    alert("Game Over");
+    
+    }
+    
+    }
+    if (gameOver) {
 
-function draw() {
- ctx.drawImage(bg, 0, 0);
-
- for(let i = 0; i < pipe.length; i++) {
- ctx.drawImage(pipeUp, pipe[i].x, pipe[i].y);
- ctx.drawImage(pipeBottom, pipe[i].x, pipe[i].y + pipeUp.height + gap);
-
- pipe[i].x--;
-
- if(pipe[i].x == 125) {
- pipe.push({
- x : cvs.width,
- y : Math.floor(Math.random() * pipeUp.height) - pipeUp.height
- });
- }
-
- // Отслеживание прикосновений
- if(xPos + bird.width >= pipe[i].x
- && xPos <= pipe[i].x + pipeUp.width
- && (yPos <= pipe[i].y + pipeUp.height
- || yPos + bird.height >= pipe[i].y + pipeUp.height + gap) || yPos + bird.height >= cvs.height - fg.height) {
- location.reload(); // Перезагрузка страницы
- }
-
- if(pipe[i].x == 5) {
- score++;
- score_audio.play();
- }
- }
-
- ctx.drawImage(fg, 0, cvs.height - fg.height);
- ctx.drawImage(bird, xPos, yPos);
-
- yPos += grav;
-
- ctx.fillStyle = "#000";
- ctx.font = "24px Verdana";
- ctx.fillText("Счет: " + score, 10, cvs.height - 20);
-
- requestAnimationFrame(draw);
-}
-
-pipeBottom.onload = draw;
+        return;
+        
+        }

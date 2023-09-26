@@ -35,4 +35,3 @@ document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-f
 document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(65) > div > div > div").click();
 document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(55) > div > div > div").click();
 document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(78) > div > div > div").click();
-
