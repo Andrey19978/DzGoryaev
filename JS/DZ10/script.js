@@ -75,9 +75,41 @@ const circle1 = {
 circle.calculateArea(3, 4)
 console.log(circle1.plo);
 //25. Создайте объект "book" с методами "setTitle" и "setAuthor" для установки заголовка и автора книги.
-let book = {
+const book = {
     setTitle: "",
     setAuthor: "",
 };
+// 27. Создайте объект "calculator" с методами "add", 
+// "subtract", "multiply" и "divide" для выполнения 
+// математических операций.
+const calculator = {
+    add: "+",
+    subtract: "-",
+    multiply: "*",
+    divide: "/",
+};
 
 
+
+// 28. Создайте объект "bankAccount" с методами "deposit" 
+// и "withdraw" для управления счетом.
+ const bankAccount = {
+    deposit: "",
+    withdraw:"",
+ };
+
+
+// 29. Создайте объект "student" с методом "addGrade" для 
+// добавления оценки.
+const student = {
+    addGrade:"",
+};
+
+// 30. Создайте объект "timer" с методами "start" и "stop" 
+// для учета времени.(Просто console.log("start")...)
+
+const timer = {
+    start: "",
+    stop:"",
+};
+console.log(start);
