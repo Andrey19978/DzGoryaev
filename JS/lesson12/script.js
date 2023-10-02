@@ -1,26 +1,3 @@
-const person1 = {
-    name1: "John",
-    armor1: "Посох",
-    HP1: 100,
-    attack1: 23,
-    defense1: 13,
-};
-const person2 = {
-    name2: "John",
-    armor2: "Посох",
-    HP2: 100,
-    attack2: 23,
-    defense2: 13,
-};
-
-
-do {
-   
-  } while ();
-
-
-
-
 
   function Person1(name, armor, heal, attack, defense) {
     this.name = name,
