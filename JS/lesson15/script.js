@@ -1,22 +1,21 @@
 let users = [
-    { name: "Вася"},
-    { name: "Петя"},
-    { name: "Маша"}
+  {name: "Иван", age: "Иванов", city: 20, number: 20},
+  {name: "Иван", age: "Иванов", city: 20, number: 20},
+  {name: "Иван", age: "Иванов", city: 20, number: 20},
   ];
 
-let name = document.getElementById('name')
-  const elem1 = document.querySelector("body > form > input[type=text]:nth-child(2)");
-  const elem3 = document.querySelector("body > form > input[type=text]:nth-child(4)");
-  const elem4 = document.querySelector("body > form > input[type=text]:nth-child(6)");
-  const elem5 = document.querySelector("body > form > input[type=text]:nth-child(8)");
-  const elem2 = document.querySelector("#result");
 
-
-function save(name, age, city, number){
-
-};
-  
-  
+  function addStudent() {
+    let name = document.getElementById("name").value;
+    let age = document.getElementById("age").value;
+    let sity = document.getElementById("sity").value;
+    let number = document.getElementById("number").value;
+    let user = {name: name, age: age, sity: sity, number: number,};
+    users.push(user);
+    }
+    for (let i = 0; i < users.length; i++) {
+      console.log(users[i].name + " " + users[i].surname + " - " + users[i].age);
+    }
   
   
   
