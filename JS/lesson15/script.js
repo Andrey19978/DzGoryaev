@@ -1,10 +1,4 @@
-let users = [
-  {name: "Иван", age: "Иванов", city: 20, number: 20},
-  {name: "Иван", age: "Иванов", city: 20, number: 20},
-  {name: "Иван", age: "Иванов", city: 20, number: 20},
-  ];
-
-
+let users = [ ];
   function addStudent() {
     let name = document.getElementById("name").value;
     let age = document.getElementById("age").value;
