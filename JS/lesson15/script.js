@@ -1,21 +1,18 @@
-let users = [
-  {name: "Иван", age: "Иванов", city: 20, number: 20},
-  {name: "Иван", age: "Иванов", city: 20, number: 20},
-  {name: "Иван", age: "Иванов", city: 20, number: 20},
-  ];
-
-
-  function addStudent() {
+let users = [ ];
     let name = document.getElementById("name").value;
     let age = document.getElementById("age").value;
-    let sity = document.getElementById("sity").value;
+    let city = document.getElementById("city").value;
     let number = document.getElementById("number").value;
-    let user = {name: name, age: age, sity: sity, number: number,};
-    users.push(user);
-    }
-    for (let i = 0; i < users.length; i++) {
-      console.log(users[i].name + " " + users[i].surname + " - " + users[i].age);
-    }
+    function user(name, age, city, number){
+        users.push({name: name, age: age, city: city, number: number,});
+        alert("Данные сохранены")
+        document.getElementById("nnn").onclick = function() {
+          document.getElementById("number").value = "";
+          document.getElementById("name").value = "";
+          document.getElementById("age").value = "";
+          document.getElementById("city").value = "";
+        }
+    } ;
   
   
   
