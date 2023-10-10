@@ -1,11 +1,12 @@
 let users = [ ];
-    let name = document.getElementById("name").value;
-    let age = document.getElementById("age").value;
-    let city = document.getElementById("city").value;
-    let number = document.getElementById("number").value;
-    function user(name, age, city, number){
-        users.push({name: name, age: age, city: city, number: number,});
-        alert("Данные сохранены")
+    let name = document.getElementById("name");
+    let age = document.getElementById("age");
+    let city = document.getElementById("city");
+    let number = document.getElementById("number");
+    let outputs = document.querySelector('.outputs')
+    function user(){
+        users.push({name: name.value, age: age.value, city: city.value, number: number.value});
+        alert(`Данные о ${name.value} сохраненны`)
         document.getElementById("nnn").onclick = function() {
           document.getElementById("number").value = "";
           document.getElementById("name").value = "";
@@ -13,6 +14,14 @@ let users = [ ];
           document.getElementById("city").value = "";
         }
     } ;
+    function showUsersName(){
+      outputs.value = ''
+      let buff = ''
+      users.forEach((e) => {
+        buff += e.name + '<br>'
+      })
+      outputs.innerHTML = buff
+    }
   
   
   
