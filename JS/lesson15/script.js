@@ -22,6 +22,14 @@ let users = [ ];
       })
       outputs.innerHTML = buff
     }
+    function showUsersAge(){
+      outputs.value = ''
+      let buff = ''
+      users.forEach((e) => {
+        buff += e.age + '<br>'
+      })
+      outputs.innerHTML = buff
+    }
   
   
   
