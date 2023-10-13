@@ -7,3 +7,8 @@ function set(d){
 
     }
 }
+function slem() {
+     d.forEach(d => {
+        
+     });
+}
