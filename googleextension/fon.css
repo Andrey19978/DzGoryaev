@@ -1,15 +1,41 @@
 body {
     text-align:center;
-    width:200px;
+    background-image: url(ocean.png);
+    width:144px;
+    height: 166px;
 }
-
-button {
-    width:100%;
+#grabBtn{
+    width:40%;
     color:white;
-    background:linear-gradient(#000000, #5bc4bc);
-    border-width:0px;
-    border-radius:20px;
+    background:linear-gradient(#296d43, #389130);
+    border-radius:10px;
     padding:5px;
     font-weight: bold;
     cursor:pointer;
+    margin-top: 60px;
+}
+#stopBtn{
+    width:40%;
+    color:#296d43;
+    background:linear-gradient(white, white);
+    border-radius:10px;
+    padding:5px;
+    font-weight: bold;
+    cursor:pointer;
+    margin-top: 60px;
+}
+
+body h1 {
+    color:rgb(52, 255, 113);
+}
+header{
+    margin-left: 20px;
+    width:144px;
+    height: 166px;
+    background-image: url(map_landing.e2c0d82e.gif);
+    background-repeat: no-repeat;
+}
+header img{
+    margin-left: -20px;
+    margin-top: 30px;
 }

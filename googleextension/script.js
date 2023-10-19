@@ -53,3 +53,25 @@ grabBtn.addEventListener("click", async () => {
         document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(78) > div > div > div").click();
     }, 1000);
   }
+//кнопка стоп
+  var abort = false;
+
+function abc()
+{
+    if (abort) {
+        return;
+    }
+
+    def();
+}
+
+function def()
+{
+    if (abort) {
+        return;
+    }
+
+    xyz();
+}
+
+<button onclick="abort = true">STOP</button>
