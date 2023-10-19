@@ -1,0 +1,34 @@
+{
+    "name":"sunflower-land",
+    
+    "description": "sunflower-landB",
+    
+    "version": "0.0.1",
+    
+    "manifest_version": 3,
+
+    "action": {
+        "default_popup":"popup.html"
+    },
+    "permissions": ["storage", "activeTab", "scripting", "tabs", "notifications"],
+    "background":{},
+
+
+
+    
+    "icons": {
+        
+    },
+    
+    "host_permissions": [
+        "https://sunflower-land.com/play/#/land/1525476"    
+    ],
+    
+    "content_scripts": [
+        {
+        "matches": ["https://sunflower-land.com/play/#/land/1525476"],
+        "js": ["script.js"],
+        "css": ["fon.css"]
+        }
+    ]
+}
