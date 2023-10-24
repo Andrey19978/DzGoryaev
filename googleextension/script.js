@@ -12,6 +12,14 @@ grabBtn.addEventListener("click", async () => {
   });
   //функция на сбор пасевов
   function grabBtnFall() {
+    let abort = false;
+
+    function abc()
+    {
+        if (abort) {
+            return;
+        }
+    }
     setTimeout(function() {
         grabBtnFall = setTimeout(grabBtnFall, 5000);
         document.querySelector("#root > div > div:nth-child(2) > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(77) > div > div > div").click();
@@ -54,24 +62,3 @@ grabBtn.addEventListener("click", async () => {
     }, 1000);
   }
 //кнопка стоп
-  var abort = false;
-
-function abc()
-{
-    if (abort) {
-        return;
-    }
-
-    def();
-}
-
-function def()
-{
-    if (abort) {
-        return;
-    }
-
-    xyz();
-}
-
-<button onclick="abort = true">STOP</button>
