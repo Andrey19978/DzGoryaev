@@ -45,5 +45,21 @@ const collection = [1, 2, 3];
 const newCollection = collection.map((x) => x * 2);
 console.log(newCollection); 
 //9. Подсчет количества определенных элементов: Создайте функцию, которая подсчитывает количество определенных элементов в массиве.
+const nums = [1, 2, 7, 4, 5, 2, 7, 8, 1, 10];
+
+const res = nums.reduce((acc, i) => {
+  if (acc.hasOwnProperty(i)) {
+    acc[i] += 1;
+  } else {
+    acc[i] = 1;
+  }
+  return acc;
+},{})
+
+console.log(res)
 
 //10. Обратный порядок элементов: Напишите функцию, которая изменяет порядок элементов в массиве на обратный.
+let myArray = ["один", "два", "три"];
+myArray.reverse();
+
+console.log(myArray);
