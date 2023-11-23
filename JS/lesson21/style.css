@@ -26,3 +26,14 @@ main{
         margin-top: 20px;
     }
 }
+
+/* Стили для устройств с малыми экранами */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    .output {
+        padding: 5px;
+    }
+}
