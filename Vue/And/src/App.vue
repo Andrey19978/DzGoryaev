@@ -1,10 +1,24 @@
-<script setup>
-
-</script>
-
 <template>
-  <h1>Наша главная страница</h1>
+  <div>
+    <button @click="pushMsg()">Click</button>
+    <p>{{ msg }}</p>
+  </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      msg: ''
+    }
+  },
+  methods: { 
+    pushMsg() {
+      this.msg = 'uyuigigiyghuikhjiguyhugy'
+    }
+  }
+}
+</script>
 
 <style scoped>
 .logo {
@@ -14,7 +28,7 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-npm run serveshadow(0 0 2em #646cffaa);
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
