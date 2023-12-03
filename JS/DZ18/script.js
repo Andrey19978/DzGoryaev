@@ -1,64 +1,63 @@
-
-class Автомобиль {
-    constructor(марка, модель, год) {
-        this.марка = марка;
-        this.модель = модель;
-        this.год = год;
-        this.скорость = 0;
-        this.двигательЗаведен = false;
+class Care {
+    constructor(brand, model, age) {
+        this.brand = brand;
+        this.model = model;
+        this.age = age;
+        this.speed = 0;
+        this.engineStarted = false;
     }
 
-    завестиДвигатель() {
-        if (this.двигательЗаведен) {
+    startTheEngine() {
+        if (this.engineStarted) {
             console.log("Двигатель уже заведен.");
         } else {
-            this.двигательЗаведен = true;
+            this.engineStarted = true;
         }
     }
 
-    выключитьДвигатель() {
-        if (!this.двигательЗаведен) {
+    turnOffEngine() {
+        if (!this.engineStarted) {
             console.log("Двигатель уже выключен.");
         } else {
-            this.двигательЗаведен = false;
+            this.engineStarted = false;
         }
     }
 
-    увеличитьСкорость(скорость) {
-        if (!this.двигательЗаведен) {
+    increaseSpeed(speed) {
+        if (!this.engineStarted) {
             console.log("Двигатель не заведен. Невозможно увеличить скорость.");
         } else {
-            this.скорость += скорость;
+            this.speed += speed;
         }
     }
 
-    уменьшитьСкорость(скорость) {
-        if (!this.двигательЗаведен) {
+    reduceSpeed(speed) {
+        if (!this.engineStarted) {
             console.log("Двигатель не заведен. Невозможно уменьшить скорость.");
         } else {
-            this.скорость -= скорость;
+            this.speed -= speed;
         }
     }
 
-    отобразитьИнформацию() {
-        console.log("Марка: " + this.марка);
-        console.log("Модель: " + this.модель);
-        console.log("Год выпуска: " + this.год);
-        console.log("Текущая скорость: " + this.скорость);
-        console.log("Двигатель заведен: " + this.двигательЗаведен);
+    displayInformation() {
+        console.log("Брэнд: " + this.brand);
+        console.log("Модель: " + this.model);
+        console.log("Год выпуска: " + this.age);
+        console.log("Текущая speed: " + this.speed);
+        console.log("Двигатель заведен: " + this.engineStarted);
     }
 }
 
-let автомобиль = new Автомобиль("Toyota", "Corolla", 2021);
-автомобиль.отобразитьИнформацию();
+let care = new Care("Toyota", "Corolla", 2021);
+care.displayInformation();
 
-автомобиль.завестиДвигатель();
-автомобиль.увеличитьСкорость(30);
-автомобиль.отобразитьИнформацию();
+care.startTheEngine();
+care.increaseSpeed(30);
+care.displayInformation();
 
-автомобиль.выключитьДвигатель();
-автомобиль.отобразитьИнформацию();
+care.turnOffEngine();
+care.displayInformation();
 
-автомобиль.завестиДвигатель();
-автомобиль.уменьшитьСкорость(50);
-автомобиль.отобразитьИнформацию();
+care.startTheEngine();
+care.reduceSpeed(50);
+care.displayInformation();
