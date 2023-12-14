@@ -1,6 +1,6 @@
 <template>
     <div class="product-card">
-        <img src="\gory-priroda-les-7463.jpg" alt="">
+        <img src="client\src\assets\gory-priroda-les-7463.jpg" alt="">
         <h3>Title</h3>
         <p>Description</p>
         <p>2500</p>
@@ -26,5 +26,13 @@ export default{
     height: 300px;
     box-shadow: 0 0 10px black;
     border-radius: 10px ;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    & img{
+        width: 100%;
+    }
 }
 </style>
