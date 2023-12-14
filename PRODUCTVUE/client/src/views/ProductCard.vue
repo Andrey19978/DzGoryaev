@@ -32,20 +32,5 @@ export default{
     height: 300px;
     box-shadow: 0 0 10px black;
     border-radius: 10px ;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    & .sale{
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: red;
-    };
-
-    & img{
-        width: 100%;
-    };
 }
 </style>
