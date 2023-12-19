@@ -14,7 +14,13 @@ export default{
     },
     data(){
         return{
-
+            baseURL: 'http://localhost:1337'
+        }
+    },
+    computed: {
+        priceRedact(){
+            let sale = this.product.attributes.dale
+            return sale > 0 ? true: false
         }
     }
 }
@@ -31,8 +37,15 @@ export default{
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    & .sale{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: red;
+    };
+
     & img{
         width: 100%;
-    }
+    };
 }
 </style>
