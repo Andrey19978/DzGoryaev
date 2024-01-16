@@ -19,6 +19,12 @@
             <MuxLink to="/about" class="border-2 rounded p-1 hover:text-teal-100 hover:border-teal-100">О нас</MuxLink>
         </nav>
 </footer>
+<div class="mx-auto border-2 rounded-lg p-4 space-y-4">
+    <h1 class="text-centr">{{ post.attributes.title }}</h1>
+    <p>{{ post.attributes.content }}</p>
+    
+
+</div>
 </template>
 
 <script setup>
