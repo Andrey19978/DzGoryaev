@@ -8,15 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <button onclick="FuncPromise()" >Промисы</button>
-        <button onclick="FuncClass()" >Классы</button>
-        <button onclick="FuncCallB()" >Колбэк</button>
-        <button onclick="FuncArr()" >Массивы</button>
+    <header> 
+        <div class="dropdown">
+            <button class="dropbtn">Выпадающее</button>
+            <div class="dropdown-content">
+              <a href="#">Ссылка 1</a>
+              <a href="#">Ссылка 2</a>
+              <a onclick="FuncMapSet()" href="#">Map и Set</a>
+            </div>
+          </div>
+        <button class="ken" onclick="FuncPromise()" >Промисы</button>
+        <button class="ken" onclick="FuncClass()" >Классы</button>
+        <button class="ken" onclick="FuncCallB()" >Колбэк</button>
+        <button class="ken" onclick="FuncArr()" >Массивы</button>
+        <button class="ken" onclick="FuncArr()" >Методы объекта, "this"</button>
+        <button class="ken" onclick="FuncArr()" >Дескрипторы, геттеры и сеттеры свойств</button>
+        <button class="ken" onclick="FuncArr()" >Массивы</button>
+        <button class="ken" onclick="FuncArr()" >Массивы</button>
     </header>
     <main>
-        <p class="output">ss</p>
+        <p class="output">Подсказки по JavaScript</p>
     </main>
+    
     <script src="script.js"></script>
 </body>
 </html>

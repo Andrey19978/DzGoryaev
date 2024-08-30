@@ -1,44 +1,49 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html,body{
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-header{
-    width: 90% ;
+header {
+    width: 90%;
     height: max-content;
     margin: auto;
     padding: 10px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    background-color: #68666661;
     box-shadow: 0 0 10px black;
     overflow-x: auto;
     border-radius: 10px;
-     & button{
+
+    & button {
         background-color: white;
         padding: 2px;
         border-radius: 5px;
         border: none;
         box-shadow: 0 2px 5px black;
-        :active{
+
+        :active {
             background-color: black;
         }
     }
 }
 
 
-body{
+body {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-main{
+main {
     width: 96%;
     height: 90%;
     margin: auto;
@@ -47,11 +52,81 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    & p{
+    background-color: rgb(217, 217, 217);
+
+    & p {
         width: 60%;
         height: 90%;
         box-shadow: 0 0 10px black;
         padding: 5px;
         overflow-y: auto;
     }
+}
+
+
+.ken:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #3C82F8;
+}
+
+.ken {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    color: white;
+    transition: .2s linear;
+    background: #0B63F6;
+}
+
+/* Кнопка выпадающего списка */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+    display: inline-block;
+    z-index: 2;
+    overflow: visible;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 135px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }

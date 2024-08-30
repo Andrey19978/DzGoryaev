@@ -70,3 +70,24 @@ let mell = document.querySelector("#root > div > div:nth-child(2) > div.absolute
 let pick = mell.click();
 let pick = mell.click();
 pick++;
+
+let fruits = ['document.querySelector("#game-board > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(94) > div > div > div").click();', ];
+for (let fruit of fruits) {
+  console.log (fruit.find);
+}
+
+fruits.forEach((element) => console.log(element));
+
+const pictures = [..массив сгенерированных объектов];  
+const showBigPicture = function (smallPicture) {..};
+const picturesList = document.querySelectorAll('.picture');
+
+for (let i = 0; i < picturesList.length; i++) {
+  picturesList[i].addEventListener('click', function () {
+    showBigPicture(pictures[i]);
+}
+}
+
+
+document.querySelector("#game-board > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(94) > div > div > div")
+

@@ -1,8 +1,8 @@
 body {
     text-align:center;
     background-image: url(ocean.png);
-    width:144px;
-    height: 166px;
+    width:176px;
+    height: 180px;
 }
 #grabBtn{
     width:40%;
@@ -29,8 +29,8 @@ body h1 {
     color:rgb(52, 255, 113);
 }
 header{
-    margin-left: 20px;
-    width: 100px;
+    margin-left: 10px;
+    width: 150px;
     height: 200px;
     background-image: url(map_landing.e2c0d82e.gif);
     background-repeat: no-repeat;

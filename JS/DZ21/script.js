@@ -2,8 +2,8 @@ const output = document.querySelector('.output')
 
 
 
-function FuncPromise(){
-    output.innerHTML = `
+function FuncPromise() {
+  output.innerHTML = `
     <h5>1.Promise (Обещание):</h5><br>
        Promise - это объект, представляющий асинхронную операцию, 
        которая может завершиться успешно (resolve) или с ошибкой 
@@ -67,14 +67,50 @@ function FuncPromise(){
     `
 }
 
-function FuncClass(){
+function FuncClass() {
+  output.innerHTML = `
+    <h5> Классы:</h5><br>
+    <p>Классы - это шаблоны для создания объектов.
+    `
+}
+
+function FuncCallB() {
 
 }
 
-function FuncCallB(){
+function FuncArr() {
 
-}
+};
 
-function FuncArr(){
+function FuncMapSet() {
+  output.innerHTML = `
+            Map
+  <br><br><pre>
+  Map – это коллекция ключ/значение, как и Object. Но основное отличие в том, что Map позволяет использовать ключи любого типа.
+  Методы и свойства:
+  new Map() – создаёт коллекцию.
+  map.set(key, value) – записывает по ключу key значение value.
+  map.get(key) – возвращает значение по ключу или undefined, если ключ key отсутствует.
+  map.has(key) – возвращает true, если ключ key присутствует в коллекции, иначе false.
+  map.delete(key) – удаляет элемент (пару «ключ/значение») по ключу key.
+  map.clear() – очищает коллекцию от всех элементов.
+  map.size – возвращает текущее количество элементов.
+  <br><br><pre>
+  Например:
 
-}
+let map = new Map();
+
+map.set("1", "str1");    // строка в качестве ключа
+map.set(1, "num1");      // цифра как ключ
+map.set(true, "bool1");  // булево значение как ключ
+
+// помните, обычный объект Object приводит ключи к строкам?
+// Map сохраняет тип ключей, так что в этом случае сохранится 2 разных значения:
+alert(map.get(1)); // "num1"
+alert(map.get("1")); // "str1"
+
+alert(map.size); // 3
+  `
+};
+
+
