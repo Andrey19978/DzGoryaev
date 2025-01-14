@@ -1,4 +1,4 @@
-const grabBtns = document.querySelectorAll('.grab-btn');//Привязываем кнопку сбора
+const grabBtns = document.querySelectorAll('.grab-btn'); //Привязываем кнопку сбора
 const stopBtn = document.getElementById("StopBtn");//Привязываем кнопку стоп
 let timeoutId = null;//Сбрасываем тайм аут "стоп"
 
@@ -13,14 +13,21 @@ grabBtns.forEach((btn) => { //Метод массива forEach() позволя
         function: collectGameBoardData
       });
     } else if (id === '2') {//Определяет айди 2
-      
-        await chrome.storage.local.set({ abort: false });//Метод abort() интерфейса AbortController прерывает DOM запрос (например Fetch запрос) до его завершения. Это позволяет прервать fetch запросы, использование любого ответа Body и потоков.
-        const tab = await getActiveTab();//Функциональность управления вкладками на стороне клиента позволяет программно получать доступ к объектам вкладок на стороне клиента. Активную вкладку можно получить на стороне клиента с помощью метода GetActiveTab .
-        chrome.scripting.executeScript({//Вставляет скрипт в целевой контекст. Скрипт запускается document_idleпо умолчанию.
-          target: { tabId: tab.id },//Свойство target интерфейса Event является ссылкой на объект, который был инициатором события. Он отличается от Event.currentTarget, если обработчик события вызывается во время всплытия (bubbling) или захвата события.
-          function: collectGameBoardDataDrev
-        });
 
+      await chrome.storage.local.set({ abort: false });//Метод abort() интерфейса AbortController прерывает DOM запрос (например Fetch запрос) до его завершения. Это позволяет прервать fetch запросы, использование любого ответа Body и потоков.
+      const tab = await getActiveTab();//Функциональность управления вкладками на стороне клиента позволяет программно получать доступ к объектам вкладок на стороне клиента. Активную вкладку можно получить на стороне клиента с помощью метода GetActiveTab .
+      chrome.scripting.executeScript({//Вставляет скрипт в целевой контекст. Скрипт запускается document_idleпо умолчанию.
+        target: { tabId: tab.id },//Свойство target интерфейса Event является ссылкой на объект, который был инициатором события. Он отличается от Event.currentTarget, если обработчик события вызывается во время всплытия (bubbling) или захвата события.
+        function: collectGameBoardDataDrev
+      });
+    } else if (id === '3') {//Определяет айди 3
+
+      await chrome.storage.local.set({ abort: false });//Метод abort() интерфейса AbortController прерывает DOM запрос (например Fetch запрос) до его завершения. Это позволяет прервать fetch запросы, использование любого ответа Body и потоков.
+      const tab = await getActiveTab();//Функциональность управления вкладками на стороне клиента позволяет программно получать доступ к объектам вкладок на стороне клиента. Активную вкладку можно получить на стороне клиента с помощью метода GetActiveTab .
+      chrome.scripting.executeScript({//Вставляет скрипт в целевой контекст. Скрипт запускается document_idleпо умолчанию.
+        target: { tabId: tab.id },//Свойство target интерфейса Event является ссылкой на объект, который был инициатором события. Он отличается от Event.currentTarget, если обработчик события вызывается во время всплытия (bubbling) или захвата события.
+        function: collectGameBoardDataSemy
+      });
     }
   });
 });
@@ -30,22 +37,84 @@ async function getActiveTab() {//Функциональность управле
   return tab;
 }
 
-function collectGameBoardData() {//Создали функцию
-  chrome.storage.local.get("abort", (result) => {//Метод abort() интерфейса AbortController прерывает DOM запрос (например Fetch запрос) до его завершения. Это позволяет прервать fetch запросы, использование любого ответа Body и потоков.
+function collectGameBoardDataSemy() {
+  chrome.storage.local.get("abort", (result) => {
+    if (result.abort) return;
+
+    const imageSelectors = [];
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz'; // Массив букв
+    const numberRange = Array.from({ length: 41 }, (_, i) => i + 1); // Массив чисел от 1 до 41
+
+    // Собираем элементы с игрового поля по буквам
+    for (let letter of alphabet) {
+      for (let il of numberRange) {
+        const selector = `#headlessui-dialog-panel-\\:r${letter}\\: > div > div.relative.max-h-\\[90vh\\].overflow-y-auto.overflow-x-hidden.scrollable.bg-\\[\\#c28569\\] > div:nth-child(2) > div > div.w-full.sm\\:w-3\\/5.h-fit.sm\\:max-h-96.p-1.flex.max-h-56.flex-wrap.overflow-y-auto.scrollable.overflow-x-hidden.sm\\:mr-1.mt-1.sm\\:mt-0 > div > div:nth-child(4) > div:nth-child(${il}) > div > div.absolute.flex.justify-center.items-center.w-full.h-full > div > img`;
+
+        const element = document.querySelector(selector);
+        if (element) {
+          imageSelectors.push(element);
+        }
+      }
+    }
+
+    // Собираем элементы с игрового поля по цифрам
+    for (let il of numberRange) {
+      const selector = `#headlessui-dialog-panel-\\:r${il}\\: > div > div.relative.max-h-\\[90vh\\].overflow-y-auto.overflow-x-hidden.scrollable.bg-\\[\\#c28569\\] > div:nth-child(2) > div > div.w-full.sm\\:w-3\\/5.h-fit.sm\\:max-h-96.p-1.flex.max-h-56.flex-wrap.overflow-y-auto.scrollable.overflow-x-hidden.sm\\:mr-1.mt-1.sm\\:mt-0 > div > div:nth-child(4) > div:nth-child(${il}) > div > div.absolute.flex.justify-center.items-center.w-full.h-full > div > img`;
+
+      const element = document.querySelector(selector);
+      if (element) {
+        imageSelectors.push(element);
+      }
+    }
+
+    console.log(`Найдено элементов: ${imageSelectors.length}`); // Логируем количество найденных элементов
+
+    // Рекурсивная функция для обработки изображений
+    function processImageElements(index) {
+      if (index >= imageSelectors.length) return;
+
+      const imgElement = imageSelectors[index];
+      if (imgElement) {
+        imgElement.click(); // Или любое другое действие, которое вы хотите выполнить
+      }
+
+      setTimeout(() => {
+        processImageElements(index + 1);
+      }, 2000); // Задержка 2 секунды
+    }
+
+    // Начинаем обработку изображений
+    processImageElements(0);
+
+    // Установка таймаута для повторного вызова функции
+    if (!result.abort) {
+      setTimeout(collectGameBoardDataSemy, 5000);
+    }
+  });
+}
+
+function collectGameBoardData() {
+  chrome.storage.local.get("abort", (result) => {
     if (result.abort) return;
 
     const elements = [];
-    for (let i = 40; i <= 116; i++) {
+
+    // Собираем элементы с игрового поля
+    for (let i = 46; i <= 149; i++) {
       const selector = `#game-board > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(${i}) > div > div > div`;
       elements.push(document.querySelector(selector));
     }
 
+    // Обрабатываем элементы игрового поля
     elements.forEach((element) => {
       if (element) {
-        element.click();
+        for (let i = 0; i < 3; i++) {
+          element.click();
+        }
       }
     });
-
+    ///nachalo
+    // Запускаем функцию снова через 5 секунд, если не было прерывания
     if (!result.abort) {
       timeoutId = setTimeout(collectGameBoardData, 5000);
     }
@@ -92,14 +161,3 @@ stopBtn.addEventListener("click", async () => {
     });
   });
 });
-document.querySelector("body > div.fixed.inset-safe-area.pointer-events-none.z-10 > div > div:nth-child(1) > div.flex.flex-col.items-center.absolute.z-50 > div.flex.flex-col.items-center > div:nth-child(2) > div > div.absolute.flex.justify-center.items-center.w-full.h-full > div > img")
-document.querySelector("#game-board > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(113) > div > div")
-document.querySelector("#game-board > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(109) > div > div")
-document.querySelector("#game-board > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(142) > div > div > div")
-document.querySelector("#game-board > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(100) > div > img")
-document.querySelector("#game-board > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(101) > div > img.absolute.bottom-0.hover\\:img-highlight")
-document.querySelector("#headlessui-dialog-panel-78 > div > div.relative.max-h-\\[90vh\\].overflow-y-auto.overflow-x-hidden.scrollable.bg-\\[\\#c28569\\] > div:nth-child(2) > div > div.w-full.sm\\:w-3\\/5.h-fit.sm\\:max-h-96.p-1.flex.max-h-56.flex-wrap.overflow-y-auto.scrollable.overflow-x-hidden.sm\\:mr-1.mt-1.sm\\:mt-0 > div.flex.flex-wrap.h-fit > div:nth-child(3) > div > div.absolute.flex.justify-center.items-center.w-full.h-full > div > img")
-document.querySelector("#game-board > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(113) > div > div")
-document.querySelector("#game-board > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(114) > div > div")
-document.querySelector("#game-board > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(111) > div > div > div")
-document.querySelector("#game-board > div.absolute.w-full.h-full.z-10 > div > div.absolute.left-1\\/2.top-1\\/2.-translate-x-1\\/2.-translate-y-1\\/2 > div > div:nth-child(116) > div > div > div")
